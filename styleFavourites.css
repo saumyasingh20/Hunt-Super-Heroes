@@ -1,0 +1,134 @@
+body{
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Belgrano', serif;
+    color: white;
+}
+#heading{
+    margin-top: 3%;
+    font-family: 'Lobster', cursive;
+}
+#header-top{
+   background-color:midnightblue;
+   width:90%;
+   background-attachment: fixed;
+   display: flex;
+   flex-wrap: wrap;
+   color:white;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;   
+}
+
+#heading{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #displayFavourites{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     
+ }
+ .favourite-hero-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: none; 
+}
+a:active{
+    color: white;
+    text-decoration: none;
+}
+
+
+ @media only screen and (min-width : 900px){
+    #header-top{
+        margin-left: 3%;
+        height: 3%;
+        padding: 1%;
+        border-radius:50px;
+        box-shadow: 0 0 10px lightgrey;
+        font-size: 1.2rem;
+    }
+    #heading{
+        font-size: 4rem;
+        letter-spacing:8px;
+        font-weight: 900;
+    }
+
+    #displayFavourites{
+        flex-direction: row;
+        width: 90%;
+
+    }
+
+    .favourite-hero-card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Dawning of a New Day', cursive;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        padding: 1%;
+        margin: 2%;
+        width:25%;
+        height : 20%;
+    }
+
+    .favourite-hero-card:hover{
+        cursor: pointer;
+        box-shadow: 0 0 3px 3px lightcyan;
+    }
+
+    .favourite-hero-card img{
+        width: 150px;
+        margin-top: 2%;
+        height: 150px;
+        border-radius: 100px;
+        box-shadow: 0 0 50px lightgrey;
+    }
+
+    .del-btn{
+        position: absolute;
+        padding: 1%;
+        right: 1%;
+        bottom: 1%;
+        color: rgba(52, 50, 50, 0.975);
+        font-size: 2rem;
+        box-shadow: 0 0px 5px rgba(255, 255, 255, 0.103);
+        border: 1px solid rgb(56, 53, 53);
+    }
+
+    .del-btn:hover{
+        cursor: grabbing;
+    }
+
+    
+
+ }
